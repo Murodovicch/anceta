@@ -22,22 +22,12 @@
       body {
         width: 740px;
         margin: 0 auto;
-      }
-      body,
-      select,
-      option,
-      input,
-      button,
-      textarea {
         font-family: Caveat;
-      }
-      button:hover {
-        background-color: red;
       }
     </style>
   </head>
   <body>
-    <div class="container bg-light p-5">
+    <div class="container-fluid bg-light p-5">
 
       <div class="row">
         <div class="col-4 col-sm-12">
@@ -183,7 +173,7 @@
         <div class="row mt-4">
           <div class="col-0 col-sm-4 col-md-7"></div>
           <div class="col-5">
-            <button class="w-50 border-1 float-md-end btn-outline-primary">
+            <button class="btn btn-outline-primary float-md-end">
               ОТПРАВИТЬ
             </button>
           </div>
@@ -192,9 +182,16 @@
         <div class="row mt-2">
           <div class="col-0 col-sm-4 col-md-7"></div>
           <div class="col-5">
-            <button class="w-50 border-1 float-md-end btn-outline-danger" type="reset" >
+            <button class="btn btn-outline-danger float-md-end" type="reset" >
               ОЧИСТИТЬ
             </button>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-5 col-sm-8 col-md-12">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
           </div>
         </div>
       </form>
